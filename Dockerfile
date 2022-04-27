@@ -1,9 +1,7 @@
-FROM node:18
+FROM node:18-alpine
 
 WORKDIR /usr/src/app-node
 
 COPY src .
-
-RUN npm install
 
 CMD ["npm", "start"]
